@@ -1,0 +1,11 @@
+.bread-crums {
+    font-size: 15px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 25px auto;
+}
+
+.bread-crums img {
+    width: 20px;
+}

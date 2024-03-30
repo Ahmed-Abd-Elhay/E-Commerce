@@ -1,0 +1,142 @@
+.bunner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 70px auto;
+    background: linear-gradient(180deg, #77c3ff, white);
+    border-radius: 15px;
+}
+
+.bunner .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+    width: 100%;
+}
+
+
+.bunner .text h1 {
+    font-size: 70px;
+    font-weight: bold;
+    color: #ff0707;
+}
+
+.bunner .text p {
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
+
+.bunner .text p span {
+    color: #FF5722;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.bunner .text button {
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    padding: 15px 30px;
+    border-radius: 65px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bunner .text button:hover {
+    transform: scale(1.05);
+    background-color: #d60303;
+}
+
+.bunner .text button:active {
+    background-color: red;
+}
+
+
+.bunner img {
+    max-width: 100%;
+    width: 20%;
+}
+
+
+/* Start Responsive */
+
+@media (max-width: 1000px) {
+
+    .bunner .text h1 {
+        font-size: 45px;
+    }
+
+    .bunner .text p {
+        font-size: 25px;
+    }
+
+    .bunner .text p span {
+        font-size: 30px;
+    }
+
+    .bunner .text button {
+        padding: 13px 25px;
+        font-size: 18px;
+    }
+
+    .bunner img {
+        max-width: 100%;
+        width: 30%;
+    }
+}
+
+@media (max-width: 700px) {
+    .bunner .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 0;
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .bunner img {
+        max-width: 100%;
+        width: 56%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .bunner {
+        width: 95%;
+    }
+
+    .bunner .text h1 {
+        font-size: 32px;
+    }
+
+    .bunner .text p span {
+        font-size: 25px;
+    }
+
+    .bunner .text p {
+        font-size: 20px;
+    }
+
+    .bunner .text button {
+        padding: 12px 23px;
+        font-size: 15px;
+    }
+
+    .bunner img {
+        max-width: 100%;
+        width: 65%;
+    }
+}
+
+/* End Responsive */
